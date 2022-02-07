@@ -11,36 +11,54 @@
 <body>
     <div class="site-box-main">
         <header class="site-header">
-            <div class="site-full-bar">
-                <div class="site-logo">
-                    <img class="site-logo-img" src="./img/m.png" alt="Mayana Favacho">
+            <div class="separator">
+                <div class="site-full-bar">
+                    <div class="site-logo">
+                        <img class="site-logo-img" src="./img/m.png" alt="Mayana Favacho">
+                    </div>
+                </div>
+                <div class="menu-buguer" onclick="openMenu()">
+                    <div class="bar-buguer"></div>
+                    <div class="bar-buguer"></div>
+                    <div class="bar-buguer"></div>
+                </div>
+                <nav id="navbar">
+                    <div class="menu-close" onclick="closeMenu()">
+                        <div class="close-bar1"></div>
+                        <div class="close-bar2"></div>
+                    </div>
+                    <ul class="menu-h">
+                        <li class="menu-item-h">
+                            <a class="menu-item-a" href="#home">Home</a>
+                        </li>
+                        <li class="menu-item-h">
+                            <a class="menu-item-a" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="menu-item-h">
+                            <a class="menu-item-a" href="#contato">Contato</a>
+                        </li>
+                        <li class="menu-item-h">
+                            <a class="menu-item-a" href="#orcamento">Orçamento</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="slide-container">
+                <div class="slide-box">
+                    <img class="slide-img" src="https://www.dudiduarte.com.br/wp-content/uploads/2021/08/F-F_03-1536x960.jpg" alt="" srcset="">
+                </div>
+
+                <!-- next and previous buttons slide -->
+                <a class="slide-prev">&#10094;</a>
+                <a class="slide-next">&#10095;</a>
+
+                <!-- dot buttons slide -->
+                <div>
+                    <span class="slide-dot"></span>
+                    <span class="slide-dot"></span>
+                    <span class="slide-dot"></span>
                 </div>
             </div>
-            <div class="menu-buguer" onclick="openMenu()">
-                <div class="bar-buguer"></div>
-                <div class="bar-buguer"></div>
-                <div class="bar-buguer"></div>
-            </div>
-            <nav id="navbar">
-                <div class="menu-close" onclick="closeMenu()">
-                    <div class="close-bar1"></div>
-                    <div class="close-bar2"></div>
-                </div>
-                <ul class="menu-h">
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#home">Home</a>
-                    </li>
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#projetos">Projetos</a>
-                    </li>
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#contato">Contato</a>
-                    </li>
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#orcamento">Orçamento</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
     </div>
 
