@@ -8,7 +8,7 @@ function plusSlides(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("slide-box");
-    if(n >= slides.length) {
+    if(n >= (slides.length + 1)) {
         slideIndex = 1;
     } 
     if (n < 1) {
@@ -20,7 +20,6 @@ function showSlides(n) {
     console.log(n-1);
     slides[slideIndex-1].style.display = "flex";
 }
-
 
 function openMenu() {
     document.getElementById("navbar").style.display = "flex";
