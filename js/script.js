@@ -1,4 +1,5 @@
 var slideIndex = 1;
+var timer = null;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -8,17 +9,18 @@ function plusSlides(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("slide-box");
-    if(n >= (slides.length + 1)) {
-        slideIndex = 1;
-    } 
-    if (n < 1) {
-        slideIndex = slides.length;
-    } 
+    clearTimeout(timer);
+
+    if (n==undefined) n = ++slideIndex
+    if (n >= (slides.length + 1)) slideIndex = 1;
+    if (n < 1) slideIndex = slides.length;
+
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    console.log(n-1);
+
     slides[slideIndex-1].style.display = "flex";
+    timer = setTimeout(showSlides, 3000);
 }
 
 function openMenu() {
