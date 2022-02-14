@@ -9,9 +9,10 @@ function plusSlides(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("slide-box");
+
     clearTimeout(timer);
 
-    if (n==undefined) n = ++slideIndex
+    if (n == undefined) n = ++slideIndex
     if (n >= (slides.length + 1)) slideIndex = 1;
     if (n < 1) slideIndex = slides.length;
 
@@ -20,7 +21,7 @@ function showSlides(n) {
     }
 
     slides[slideIndex-1].style.display = "flex";
-    timer = setTimeout(showSlides, 3000);
+    timer = setTimeout(showSlides, 5000);
 }
 
 function openMenu() {
