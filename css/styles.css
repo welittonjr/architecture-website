@@ -202,6 +202,32 @@
     border-radius: 3px 0 0 3px;
 }
 
+.slide-prev:hover, .slide-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slide-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%, -2%);
+}
+
+.slide-dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slide-dot-active, .slide-dot:hover {
+    background-color: #717171;
+}
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -349,6 +375,29 @@
         background-position: center center;
     }
 
+    .slide-message {
+        height: 250px;
+        width: 500px;
+    }
+
+    .slide-title {
+        font-size: 30px;
+    }
+    
+    .slide-text {
+        font-size: 22px;
+    }
+    
+    .slide-know-more {
+        height: 60px;
+        width: 190px;
+
+        line-height: 60px;
+    
+        font-size: 15px;
+        font-weight: 600px;
+    }
+
     .slide-prev, .slide-next {
         top: 50%;
         padding: 10px;
@@ -370,5 +419,30 @@
 
     .slide-container {
         height: 300px;
+    }
+
+    .slide-message {
+        height: 150px;
+        width: 400px;
+    }
+
+    .slide-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .slide-text {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .slide-know-more {
+        height: 40px;
+        width: 150px;
+
+        line-height: 40px;
+    
+        font-size: 15px;
+        font-weight: 600px;
     }
 }
