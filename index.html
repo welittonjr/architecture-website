@@ -5,42 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?display=swap&amp;family=Questrial:400|Source+Sans Pro:400" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Mayana Favacho</title>
 </head>
 <body>
-    <div class="site-box-main">
-        <header class="site-header">
-            <div class="site-full-bar">
-                <div class="site-logo">
-                    <img class="site-logo-img" src="./img/m.png" alt="Mayana Favacho">
+    <div class="main">
+        <header class="head">
+            <div class="menu-c">
+                <div class="logo-c">
+                    <div class="logo">
+                        <img class="logo-img" src="./img/logo.png" alt="Mayana Favacho">
+                    </div>
+                </div>
+                <div class="menu-buguer" onclick="openMenu()">
+                    <div class="bar-buguer"></div>
+                    <div class="bar-buguer"></div>
+                    <div class="bar-buguer"></div>
+                </div>
+                <nav id="navbar">
+                    <div class="menu-close" onclick="closeMenu()">
+                        <div class="close-bar1"></div>
+                        <div class="close-bar2"></div>
+                    </div>
+                    <ul class="menu-h">
+                        <li class="menu-item-h">
+                            <a class="menu-item-a active" href="#home">Home</a>
+                        </li>
+                        <li class="menu-item-h">
+                            <a class="menu-item-a" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="menu-item-h">
+                            <a class="menu-item-a" href="#contato">Contato</a>
+                        </li>
+                        <li class="menu-item-h">
+                            <a class="menu-item-a" href="#orcamento">Orçamento</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="slide-container">
+                <div class="slide-box fade">
+                    <img class="slide-img" src="./img/escritorio1.jpg" alt="">
+                    <div class="slide-message">
+                        <h1 class="slide-title"> Title1 </h1>
+                        <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
+                        <a class="slide-know-more" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="slide-box fade">
+                    <img class="slide-img" src="./img/escritorio2.jpg" alt="">
+                    <div class="slide-message">
+                        <h1 class="slide-title"> Title2 </h1>
+                        <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
+                        <a class="slide-know-more" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="slide-box fade">
+                    <img class="slide-img" src="./img/quarto.jpg" alt="">
+                    <div class="slide-message">
+                        <h1 class="slide-title"> Title3 </h1>
+                        <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
+                        <a class="slide-know-more" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="slide-box fade">
+                    <img class="slide-img" src="./img/sala1.jpg" alt="">
+                    <div class="slide-message">
+                        <h1 class="slide-title"> Title4 </h1>
+                        <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
+                        <a class="slide-know-more" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="slide-box fade">
+                    <img class="slide-img" src="./img/sala2.jpg" alt="">
+                    <div class="slide-message">
+                        <h1 class="slide-title"> Title5 </h1>
+                        <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
+                        <a class="slide-know-more" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- next and previous buttons slide -->
+                <a class="slide-prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="slide-next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- dot buttons slide -->
+                <div class="slide-dots">
+                    <span class="slide-dot" onclick="currentSlide(1)"></span>
+                    <span class="slide-dot" onclick="currentSlide(2)"></span>
+                    <span class="slide-dot" onclick="currentSlide(3)"></span>
+                    <span class="slide-dot" onclick="currentSlide(4)"></span>
+                    <span class="slide-dot" onclick="currentSlide(5)"></span>
+                    <span class="slide-dot" onclick="currentSlide(6)"></span>
                 </div>
             </div>
-            <div class="menu-buguer" onclick="openMenu()">
-                <div class="bar-buguer"></div>
-                <div class="bar-buguer"></div>
-                <div class="bar-buguer"></div>
-            </div>
-            <nav id="navbar">
-                <div class="menu-close" onclick="closeMenu()">
-                    <div class="close-bar1"></div>
-                    <div class="close-bar2"></div>
-                </div>
-                <ul class="menu-h">
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#home">Home</a>
-                    </li>
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#projetos">Projetos</a>
-                    </li>
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#contato">Contato</a>
-                    </li>
-                    <li class="menu-item-h">
-                        <a class="menu-item-a" href="#orcamento">Orçamento</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
     </div>
 
