@@ -1,6 +1,41 @@
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
 .w-1100 {
     width: 1100px;
+}
+
+.w-100p {
+   width: 100%; 
+}
+
+.d-ib {
+    display: inline-block;
+}
+
+.d-b {
+    display: block;
+}
+
+.d-grd {
+    display: grid;
+}
+
+.d-flx {
+    display: flex;
 }
 
 .mt-40 {
@@ -11,6 +46,14 @@
     margin-bottom: 40px;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .title-1 {
     font-size: 80px;
     font-weight: 700;
@@ -19,6 +62,11 @@
 .title-3 {
     font-size: 40px;
     font-weight: 700;
+}
+
+.text-p {
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .text-up {
@@ -57,6 +105,10 @@
 .grd-rs-2-re-2 {
     grid-row-start: 2;
     grid-row-end: 2;
+}
+
+.grd-colum-4 {
+    grid-template-columns: repeat(4, auto);
 }
 
 .gap-10 {
