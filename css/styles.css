@@ -1,10 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-}
+
 
 ul {
     list-style: none;
@@ -416,8 +410,6 @@ a {
     }
 
     .menu-c {
-        position: static;
-
         height: 60px;
         width: 100%;
     
