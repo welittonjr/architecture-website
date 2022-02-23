@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/struct.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,10 +13,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="head">
-            <div class="menu-c" id="menu-top">
-                <div class="logo-c">
-                    <div class="logo">
+        <header class="header flex flex-column">
+            <div id="menu-top" class="menu flex flex-column mobile-row mobile-justify-content-between mobile-align-items-center">
+                <div class="logo-c flex justify-content-center align-items-center">
+                    <div class="logo flex justify-content-center align-items-center">
                         <img class="logo-img" src="./img/logo.png" alt="Mayana Favacho">
                     </div>
                 </div>
@@ -25,23 +25,23 @@
                     <div class="bar-buguer"></div>
                     <div class="bar-buguer"></div>
                 </div>
-                <nav id="navbar">
+                <nav id="navbar" class="flex justify-content-center align-items-center mobile-column">
                     <div class="menu-close" id="close-menu">
                         <div class="close-bar1"></div>
                         <div class="close-bar2"></div>
                     </div>
-                    <ul class="menu-h">
-                        <li class="menu-item-h">
-                            <a class="menu-item-a active" href="./index.html">Home</a>
+                    <ul class="menu-h flex justify-content-center align-items-center mobile-column mobile-justify-content-start mobile-align-items-center">
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex mobile-justify-content-center mobile-align-items-center active" href="./index.html">Home</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./project.html">Projetos</a>
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./project.html">Projetos</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./contact.html">Contato</a>
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./contact.html">Contato</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./budget.html">Orçamento</a>
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./budget.html">Orçamento</a>
                         </li>
                     </ul>
                 </nav>
@@ -49,43 +49,39 @@
             <div class="slide-container">
                 <div class="slide-box fade">
                     <img class="slide-img" src="./img/escritorio1.jpg" alt="">
-                    <div class="slide-message">
+                    <div class="slide-message flex flex-column mobile-justify-content-between align-items-center">
                         <h1 class="slide-title"> Title1 </h1>
                         <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
                         <a class="slide-know-more" href="#">Saiba Mais</a>
                     </div>
                 </div>
-
                 <div class="slide-box fade">
                     <img class="slide-img" src="./img/escritorio2.jpg" alt="">
-                    <div class="slide-message">
+                    <div class="slide-message flex flex-column mobile-justify-content-between align-items-center">
                         <h1 class="slide-title"> Title2 </h1>
                         <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
                         <a class="slide-know-more" href="#">Saiba Mais</a>
                     </div>
                 </div>
-
                 <div class="slide-box fade">
                     <img class="slide-img" src="./img/quarto.jpg" alt="">
-                    <div class="slide-message">
+                    <div class="slide-message flex flex-column mobile-justify-content-between align-items-center">
                         <h1 class="slide-title"> Title3 </h1>
                         <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
                         <a class="slide-know-more" href="#">Saiba Mais</a>
                     </div>
                 </div>
-
                 <div class="slide-box fade">
                     <img class="slide-img" src="./img/sala1.jpg" alt="">
-                    <div class="slide-message">
+                    <div class="slide-message flex flex-column mobile-justify-content-between align-items-center">
                         <h1 class="slide-title"> Title4 </h1>
                         <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
                         <a class="slide-know-more" href="#">Saiba Mais</a>
                     </div>
                 </div>
-
                 <div class="slide-box fade">
                     <img class="slide-img" src="./img/sala2.jpg" alt="">
-                    <div class="slide-message">
+                    <div class="slide-message flex flex-column mobile-justify-content-between align-items-center">
                         <h1 class="slide-title"> Title5 </h1>
                         <p class="slide-text">Conheça esse lindíssimo projeto com soluções elegantes e criativas by Mayana Favacho.</p>
                         <a class="slide-know-more" href="#">Saiba Mais</a>
