@@ -15,10 +15,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="head">
-            <div class="menu-c" id="menu-top">
-                <div class="logo-c">
-                    <div class="logo">
+        <header class="header flex flex-column">
+            <div id="menu-top" class="menu flex flex-column mobile-row mobile-justify-content-between mobile-align-items-center">
+                <div class="logo-c flex justify-content-center align-items-center">
+                    <div class="logo flex justify-content-center align-items-center">
                         <img class="logo-img" src="./img/logo.png" alt="Mayana Favacho">
                     </div>
                 </div>
@@ -27,67 +27,69 @@
                     <div class="bar-buguer"></div>
                     <div class="bar-buguer"></div>
                 </div>
-                <nav id="navbar">
+                <nav id="navbar" class="flex justify-content-center align-items-center mobile-column">
                     <div class="menu-close" id="close-menu">
                         <div class="close-bar1"></div>
                         <div class="close-bar2"></div>
                     </div>
-                    <ul class="menu-h">
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./index.html">Home</a>
+                    <ul class="menu-h flex justify-content-center align-items-center mobile-column mobile-justify-content-start mobile-align-items-center">
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex mobile-justify-content-center mobile-align-items-center active" href="./index.html">Home</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./project.html">Projetos</a>
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./project.html">Projetos</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a active" href="./contact.html">Contato</a>
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./contact.html">Contato</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./budget.html">Orçamento</a>
+                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
+                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./budget.html">Orçamento</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="w-1100 mt-40 mb-40">
-            <div class="flx-rc contact-title">
-                <h1 class="title-1 text-up">Contato</h1>
-            </div>
-        </div>
-        <div class="w-1100 mt-40 mb-40">
-            <div class="flx-rc">
-                <div class="flx-rc contact-cellphone">
-                    <a href="#">
-                        <i class="fa-light fa-mobile"></i>
-                        +55 00 90000-0000
-                    </a>
-                </div>
-                <div class="flx-rc contact-whatsapp">
-                    <a href="http://">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        +55 00 90000-0000
-                    </a>
-                </div>
-                <div class="flx-rc contact-email">
-                    <a href="http://">
-                        <i class="fa-light fa-envelope"></i>
-                        contato@mayanafavacho.com.br
-                    </a>
+        <main class="flx-cc">
+            <div class="w-1100 mt-40 mb-40">
+                <div class="flx-rc contact-title">
+                    <h1 class="title-1 text-up">Contato</h1>
                 </div>
             </div>
-        </div>
-        <div class="w-1100 mt-40 mb-40">
-            <div class="flx-rc send-message-title">
-                <h3 class="title-3">Enviar Mesagem</h3>
+            <div class="w-1100 mt-40 mb-40">
+                <div class="flx-rc">
+                    <div class="flx-rc contact-cellphone">
+                        <a href="#">
+                            <i class="fa-light fa-mobile"></i>
+                            +55 00 90000-0000
+                        </a>
+                    </div>
+                    <div class="flx-rc contact-whatsapp">
+                        <a href="http://">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            +55 00 90000-0000
+                        </a>
+                    </div>
+                    <div class="flx-rc contact-email">
+                        <a href="http://">
+                            <i class="fa-light fa-envelope"></i>
+                            contato@mayanafavacho.com.br
+                        </a>
+                    </div>
+                </div>
             </div>
-            <form class="grd-c3-r3 gap-10" action="" method="post">
-                <input class="text-input" type="text" name="nome" placeholder="digite seu nome">
-                <input class="text-input" type="e-mail" name="email" placeholder="digite seu e-mail">
-                <input class="text-input" type="text" name="telefone" placeholder="digite seu telefone">
-                <textarea class="text-area grd-cs-1-ce-4 grd-rs-2-re-2" name="mensagem" id="" cols="30" rows="10" placeholder="digite sua mensagem"></textarea>
-                <button class="btn grd-cs-2" type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
+            <div class="w-1100 mt-40 mb-40">
+                <div class="flx-rc send-message-title">
+                    <h3 class="title-3">Enviar Mesagem</h3>
+                </div>
+                <form class="grd-c3-r3 gap-10" action="" method="post">
+                    <input class="text-input" type="text" name="nome" placeholder="digite seu nome">
+                    <input class="text-input" type="e-mail" name="email" placeholder="digite seu e-mail">
+                    <input class="text-input" type="text" name="telefone" placeholder="digite seu telefone">
+                    <textarea class="text-area grd-cs-1-ce-4 grd-rs-2-re-2" name="mensagem" id="" cols="30" rows="10" placeholder="digite sua mensagem"></textarea>
+                    <button class="btn grd-cs-2" type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </main>
         <footer class="foot"> 
             <div class="foot-c">
                 <div class="foot-menu">
