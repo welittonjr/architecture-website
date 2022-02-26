@@ -17,10 +17,10 @@
 
 <body>
     <div class="wrapper">
-        <header class="header flex flex-column">
-            <div id="menu-top" class="menu flex flex-column mobile-row mobile-justify-content-between mobile-align-items-center">
-                <div class="logo-c flex justify-content-center align-items-center">
-                    <div class="logo flex justify-content-center align-items-center">
+        <header class="header">
+            <div id="menu" class="menu">
+                <div class="menu-logo">
+                    <div class="logo">
                         <img class="logo-img" src="./img/logo.png" alt="Mayana Favacho">
                     </div>
                 </div>
@@ -29,20 +29,20 @@
                     <div class="bar-buguer"></div>
                     <div class="bar-buguer"></div>
                 </div>
-                <nav id="navbar" class="flex justify-content-center align-items-center mobile-column">
+                <nav id="nav" class="menu-nav">
                     <div class="menu-close" id="close-menu">
                         <div class="close-bar1"></div>
                         <div class="close-bar2"></div>
                     </div>
-                    <ul class="menu-h flex justify-content-center align-items-center mobile-column mobile-justify-content-start mobile-align-items-center">
-                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
-                            <a class="menu-item-link inline-block mobile-flex mobile-justify-content-center mobile-align-items-center active" href="./index.html">Home</a>
+                    <ul class="menu-bar">
+                        <li class="menu-list">
+                            <a class="menu-item active" href="./index.html">Home</a>
                         </li>
-                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
-                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./project.html">Projetos</a>
+                        <li class="menu-list">
+                            <a class="menu-item" href="./project.html">Projetos</a>
                         </li>
-                        <li class="inline mobile-flex mobile-justify-content-center mobile-align-items-center">
-                            <a class="menu-item-link inline-block mobile-flex align-items-center" href="./contact.html">Contato</a>
+                        <li class="menu-list">
+                            <a class="menu-item" href="./contact.html">Contato</a>
                         </li>
                     </ul>
                 </nav>
@@ -117,54 +117,53 @@
                 </div>
             </div>
         </main>
-        <footer class="footer flex flex-column align-items-center justify-content-center">
-            <div class="foot-c">
-                <div class="foot-menu">
-                    <div class="foot-column">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-box">
                         <h6>Menu</h6>
-                        <ul class="menu-v">
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#home">Home</a>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#home">Home</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#projetos">Projetos</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#projetos">Projetos</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="./contact.html">Contato</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="./contact.html">Contato</a>
                             </li>
                         </ul>
                     </div>
-
                 </div>
-                <div class="foot-project">
-                    <div class="foot-column">
+                <div class="footer-column">
+                    <div class="footer-box">
                         <h6>Projetos Recentes</h6>
-                        <ul class="menu-v">
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#home">Casa 1</a>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#home">Casa 1</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#projetos">Casa 2</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#projetos">Casa 2</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="./contact.html">Casa 3</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="./contact.html">Casa 3</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#casa4">Casa 4</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#casa4">Casa 4</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="foot-logo">
-                    <div class="foot-column">
-                        <div class="logo-v">
-                            <img class="logo-v-img" src="./img/logo.png" alt="Mayana Favacho">
+                <div class="footer-column">
+                    <div class="footer-box">
+                        <div class="footer-logo">
+                            <img class="footer-logo-img" src="./img/logo.png" alt="Mayana Favacho">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bar-bottom">
-                <div class="link-group">
+            <div class="footer-bar">
+                <div class="footer-group">
                     <div class="link-contact">
                         <a href="./contact.html">
                             <i class="fa-solid fa-envelope"></i>
