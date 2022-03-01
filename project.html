@@ -10,18 +10,16 @@
     <link rel="stylesheet" href="./css/struct.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Contato</title>
 </head>
 
 <body>
-    <div class="main">
-        <header class="head">
-            <div class="menu-c" id="menu-top">
-                <div class="logo-c">
+    <div class="wrapper">
+        <header class="header">
+            <div id="menu" class="menu">
+                <div class="menu-logo">
                     <div class="logo">
                         <img class="logo-img" src="./img/logo.png" alt="Mayana Favacho">
                     </div>
@@ -31,38 +29,38 @@
                     <div class="bar-buguer"></div>
                     <div class="bar-buguer"></div>
                 </div>
-                <nav id="navbar">
+                <nav id="nav" class="menu-nav">
                     <div class="menu-close" id="close-menu">
                         <div class="close-bar1"></div>
                         <div class="close-bar2"></div>
                     </div>
-                    <ul class="menu-h">
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./index.html">Home</a>
+                    <ul class="menu-bar">
+                        <li class="menu-list">
+                            <a class="menu-item active" href="./index.html">Home</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a active" href="#projetos">Projetos</a>
+                        <li class="menu-list">
+                            <a class="menu-item" href="./project.html">Projetos</a>
                         </li>
-                        <li class="menu-item-h">
-                            <a class="menu-item-a" href="./contact.html">Contato</a>
+                        <li class="menu-list">
+                            <a class="menu-item" href="./contact.html">Contato</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="flx-cc">
-            <div class="w-1100 mt-40 mb-40">
+        <main class="content">
+            <div class="section-row">
                 <div class="flx-rc box-mesage">
                     <h1 class="title-1">Portifólio</h1>
                 </div>
             </div>
-            <div class="w-1100 mt-40 mb-40">
+            <div class="section-row">
                 <div class="flx-rc box-mesage">
                     <p class="text-p">Projetos incríveis e personalizados projetados para clientes exigentes que
                         valorizam estética e funcionalidade.</p>
                 </div>
             </div>
-            <div class="w-1100 mt-40 mb-40">
+            <div class="section-row">
                 <div class="flx-cc">
                     <div class="flx-rc">
                         <ul class="w-100p">
@@ -118,62 +116,60 @@
                     </div>
                 </div>
             </div>
-
-        </div>
-        <footer class="foot">
-            <div class="foot-c">
-                <div class="foot-menu">
-                    <div class="foot-column">
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-box">
                         <h6>Menu</h6>
-                        <ul class="menu-v">
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#home">Home</a>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#home">Home</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#projetos">Projetos</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#projetos">Projetos</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="./contact.html">Contato</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="./contact.html">Contato</a>
                             </li>
                         </ul>
                     </div>
-
                 </div>
-                <div class="foot-project">
-                    <div class="foot-column">
+                <div class="footer-column">
+                    <div class="footer-box">
                         <h6>Projetos Recentes</h6>
-                        <ul class="menu-v">
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#home">Casa 1</a>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#home">Casa 1</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#projetos">Casa 2</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#projetos">Casa 2</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="./contact.html">Casa 3</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="./contact.html">Casa 3</a>
                             </li>
-                            <li class="menu-item-v">
-                                <a class="menu-item-va" href="#casa4">Casa 4</a>
+                            <li class="footer-menu-list">
+                                <a class="footer-menu-item" href="#casa4">Casa 4</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="foot-logo">
-                    <div class="foot-column">
-                        <div class="logo-v">
-                            <img class="logo-v-img" src="./img/logo.png" alt="Mayana Favacho">
+                <div class="footer-column">
+                    <div class="footer-box">
+                        <div class="footer-logo">
+                            <img class="footer-logo-img" src="./img/logo.png" alt="Mayana Favacho">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bar-bottom">
-                <div class="link-group">
-                    <div class="link-contact">
+            <div class="footer-bar">
+                <div class="footer-group">
+                    <div class="footer-contact">
                         <a href="./contact.html">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </div>
-                    <div class="link-social-media">
+                    <div class="footer-social-media">
                         <a href="#">
                             <i class="fa-brands fa-facebook-square"></i>
                         </a>

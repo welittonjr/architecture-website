@@ -6,11 +6,11 @@ window.onscroll = function () {
 
 // event para abrir o menu mobile
 delegate(document, "click", "#open-menu", () => {
-    document.getElementById("navbar").style.display = "flex";
+    document.getElementById("nav").style.display = "flex";
 });
 // event para fechar menu mobile
 delegate(document, "click", "#close-menu", () => {
-    document.getElementById("navbar").style.display = "none";
+    document.getElementById("nav").style.display = "none";
 });
 // event para slide anterior
 delegate(document, "click", "#slide-prev", () => plusSlides(-1));
@@ -70,9 +70,9 @@ function effectBgMenuTop() {
         document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100
     ) {
-        addClass("menu-top", "menu-bg");
+        addClass("menu", "menu-bg");
     } else {
-        delClass("menu-top", "menu-bg");
+        delClass("menu", "menu-bg");
     }
 }
 
