@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 
 $routes->get('/install', 'install/InstallController::index');
+$routes->post('/install/it_started', 'install/InstallController::it_started');
 
 $routes->get('/', 'Home::index');
 $routes->get('/admin', 'admin/Admin::index');
