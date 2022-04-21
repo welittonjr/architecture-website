@@ -127,3 +127,5 @@ nb-configuration.xml
 
 /docker/db
 /docker/apache/var
+
+app/Config/Database.php
