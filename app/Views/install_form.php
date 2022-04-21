@@ -3,6 +3,14 @@
 <?= $this->section('content') ?>
 
 <div class="login-box">
+    <?php if (isset($msgError)) : ?>
+        <div class="alert alert-danger alert-dismissable fade show" role="alert">
+            <?= $msgError ?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php endif; ?>
 
     <div class="card card-outline card-success">
         <div class="card-header text-center">
@@ -12,25 +20,25 @@
             <?= form_open(base_url('install/it_started')) ?>
             <div class="form-group mb-3">
                 <input type="text" class="form-control" name="hostname" placeholder="Hostname" value="<?= old('hostname') ?>">
-                <?php if (isset($error) && $error->hasError('hostname')): ?>
+                <?php if (isset($error) && $error->hasError('hostname')) : ?>
                     <span class="text-danger"><?= $error->getError('hostname'); ?></span>
                 <?php endif; ?>
             </div>
             <div class="form-group mb-3">
                 <input type="text" class="form-control" name="database" placeholder="Database Name" value="<?= old('database') ?>">
-                <?php if (isset($error) && $error->hasError('database')): ?>
+                <?php if (isset($error) && $error->hasError('database')) : ?>
                     <span class="text-danger"><?= $error->getError('database'); ?></span>
                 <?php endif; ?>
             </div>
             <div class="form-group mb-3">
                 <input type="text" class="form-control" name="username" placeholder="Username" value="<?= old('username') ?>">
-                <?php if (isset($error) && $error->hasError('username')): ?>
+                <?php if (isset($error) && $error->hasError('username')) : ?>
                     <span class="text-danger"><?= $error->getError('username'); ?></span>
                 <?php endif; ?>
             </div>
             <div class="form-group mb-3">
                 <input type="text" class="form-control" name="password" placeholder="Password" value="<?= old('password') ?>">
-                <?php if (isset($error) && $error->hasError('password')): ?>
+                <?php if (isset($error) && $error->hasError('password')) : ?>
                     <span class="text-danger"><?= $error->getError('password'); ?></span>
                 <?php endif; ?>
             </div>
