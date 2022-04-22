@@ -27,12 +27,6 @@ class InstallController extends BaseController
 
     public function it_started()
     {
-        $data = array();
-
-        $data['is_writeable']['root'] = is_writeable(FCPATH . '../');
-        $data['is_writeable']['config'] = is_writeable(FCPATH . '../' . 'app/Config/');
-        $data['is_writeable']['uploads'] = is_writeable(FCPATH . '../' . 'uploads/');
-
         $rules = [
             'hostname' => 'required',
             'database' => 'required',
@@ -41,7 +35,7 @@ class InstallController extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            return redirect()->back()->withInput()->with('error', $this->validator);
+            return redirect()->to(base_url('install'))->withInput()->with('error', $this->validator);
         } else {
             $dsn = "MySQLi://{$this->request->getVar('username')}";
             $dsn .= ":{$this->request->getVar('password')}";
@@ -75,13 +69,12 @@ class InstallController extends BaseController
 
                     file_put_contents($fileDatabase, preg_replace($patters, $replaces, $fileContent));
 
-                    
-                    die();
+                    redirect()->to(base_url('register'));
                 } else {
                     throw new DataException;
                 }
             } catch (DatabaseException $e) {
-                return redirect()->back()->with('msgError', 'Erro ao estabelecer uma conexão com o banco de dados ');
+                return redirect()->to(base_url('install'))->with('msgError', 'Erro ao estabelecer uma conexão com o banco de dados ');
             }
         }
     }
