@@ -57,15 +57,26 @@ class InstallController extends BaseController
                 $db->query("SELECT 1 + 1 AS sum");
 
                 if (is_resource($db->connID) || is_object($db->connID)) {
-                    $settings = array();
-                    $settings['hostname']       = $this->request->getVar('hostname');
-                    $settings['username']       = $this->request->getVar('username');
-                    $settings['password']       = $this->request->getVar('password');
-                    $settings['database']       = $this->request->getVar('database');
-                    $file_contents              = file_get_contents(FCPATH . '../' . 'app/Config/Database.php');
 
-                    var_dump($file_contents);
+                    $fileDatabase = FCPATH . '../' . 'app/Config/Database.php';
+                    $fileContent  = file_get_contents($fileDatabase);
+
+                    $patters = array();
+                    $patters[0] = '/\'hostname\'\s=>\s\'localhost\'/';
+                    $patters[1] = '/\'username\'\s=>\s\'{2}/';
+                    $patters[2] = '/\'password\'\s=>\s\'{2}/';
+                    $patters[3] = '/\'database\'\s=>\s\'{2}/';
+
+                    $replaces = array();
+                    $replaces[0] = '\'hostname\' => \'' . $this->request->getVar('hostname') . '\'';
+                    $replaces[1] = '\'username\' => \'' . $this->request->getVar('username') . '\'';
+                    $replaces[2] = '\'password\' => \'' . $this->request->getVar('password') . '\'';
+                    $replaces[3] = '\'database\' => \'' . $this->request->getVar('database') . '\'';
+
+                    file_put_contents($fileDatabase, preg_replace($patters, $replaces, $fileContent));
+
                     
+                    die();
                 } else {
                     throw new DataException;
                 }
