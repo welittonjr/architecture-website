@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 
 $routes->get('/install', 'install/InstallController::index');
 $routes->post('/install/it_started', 'install/InstallController::it_started');
+$routes->get('/register', 'register/RegisterController::index');
 
 $routes->get('/', 'Home::index');
 $routes->get('/admin', 'admin/Admin::index');
