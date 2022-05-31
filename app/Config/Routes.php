@@ -35,10 +35,11 @@ $routes->setAutoRoute(true);
 $routes->get('/install', 'install/InstallController::index');
 $routes->post('/install/it_started', 'install/InstallController::it_started');
 $routes->get('/register', 'register/RegisterController::index');
+$routes->post('/register/save', 'register/RegisterController::save');
 
 $routes->get('/', 'Home::index');
-$routes->get('/admin', 'admin/Admin::index');
-$routes->get('/login', 'admin/Admin::login');
+$routes->get('/admin', 'admin/AdminController::index');
+$routes->get('/login', 'admin/AdminController::login');
 
 /*
  * --------------------------------------------------------------------
