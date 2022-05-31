@@ -8,11 +8,11 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
-    <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free/css/all.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/fontawesome-free/css/all.min.css') ?>">
 
-    <link rel="stylesheet" href="<?= base_url('assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css') ?>">
 
-    <link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css?v=3.2.0') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/assets/dist/css/adminlte.min.css?v=3.2.0') ?>">
     <script nonce="24ac9824-1aa6-4c5d-bd6e-06b683b215f2">
         (function(w, d) {
             ! function(a, e, t, r) {
@@ -47,11 +47,11 @@
     
     <?= $this->renderSection('content') ?>
 
-    <script src="<?= base_url('assets/plugins/jquery/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/plugins/jquery/jquery.min.js') ?>"></script>
 
-    <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
-    <script src="<?= base_url('assets/dist/js/adminlte.min.js?v=3.2.0') ?>"></script>
+    <script src="<?= base_url('public/assets/dist/js/adminlte.min.js?v=3.2.0') ?>"></script>
 </body>
 
 </html>

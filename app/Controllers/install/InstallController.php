@@ -10,12 +10,16 @@ class InstallController extends BaseController
 {
     public function __construct()
     {
-        // Call helpers
+
         helper(array('form', 'file', 'url', 'session'));
     }
 
     public function index()
     {
+        if (db_connect()->tableExists('users')) {
+            return redirect()->to(base_url('register'));
+        }
+
         $data = array();
         if (session()->has('error')) {
             $data['error'] = session('error');
@@ -69,7 +73,14 @@ class InstallController extends BaseController
 
                     file_put_contents($fileDatabase, preg_replace($patters, $replaces, $fileContent));
 
-                    redirect()->to(base_url('register'));
+                    try {
+                        $migrate = \Config\Services::migrations();
+                        $migrate->latest();
+                    } catch (\Throwable $e) {
+                        return redirect()->to(base_url('install'))->with('msgError', 'Não foi criar as tabelas do banco de dados');
+                    }
+
+                    return redirect()->to(base_url('register'));
                 } else {
                     throw new DataException;
                 }
