@@ -10,12 +10,16 @@ class InstallController extends BaseController
 {
     public function __construct()
     {
-        // Call helpers
+
         helper(array('form', 'file', 'url', 'session'));
     }
 
     public function index()
     {
+        if (db_connect()->tableExists('users')) {
+            return redirect()->to(base_url('register'));
+        }
+
         $data = array();
         if (session()->has('error')) {
             $data['error'] = session('error');
