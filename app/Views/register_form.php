@@ -3,23 +3,15 @@
 <?= $this->section('content') ?>
 
 <div class="login-box">
-    <?php if (isset($msgError)) : ?>
-        <div class="alert alert-danger alert-dismissable fade show" role="alert">
-            <?= $msgError ?>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    <?php endif; ?>
 
     <div class="card card-outline card-success">
         <div class="card-header text-center">
             <p class="h5 text-dark">Registro de Administrador</p>
         </div>
         <div class="card-body">
-            <?= form_open(base_url('install/it_started')) ?>
+            <?= form_open(base_url('register/save')) ?>
             <div class="form-group mb-3">
-                <input type="text" class="form-control" name="name" placeholder="Nome" value="<?= old('name') ?>">
+                <input type="text" class="form-control" name="name" placeholder="Nome Completo" value="<?= old('name') ?>">
                 <?php if (isset($error) && $error->hasError('name')) : ?>
                     <span class="text-danger"><?= $error->getError('name'); ?></span>
                 <?php endif; ?>
