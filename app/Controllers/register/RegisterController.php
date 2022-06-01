@@ -3,7 +3,7 @@
 namespace App\Controllers\Register;
 
 use App\Controllers\BaseController;
-use App\Models\Users;
+use App\Models\User;
 
 class RegisterController extends BaseController
 {
@@ -13,7 +13,7 @@ class RegisterController extends BaseController
     {
         // Call helpers
         helper(array('form', 'session'));
-        $this->usersModel = new Users();
+        $this->usersModel = new User();
     }
 
     public function index()
