@@ -32,6 +32,10 @@ class Users extends Migration
                 'type' => 'varchar',
                 'constraint' => 100,
             ),
+            'user_role' => array(
+                'type' => 'int',
+                'constraint' => 10,
+            ),
             'status' => array(
                 'type' => 'tinyint',
                 'constraint' => 1,
