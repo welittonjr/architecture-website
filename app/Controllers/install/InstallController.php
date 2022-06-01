@@ -76,6 +76,8 @@ class InstallController extends BaseController
                     try {
                         $migrate = \Config\Services::migrations();
                         $migrate->latest();
+                        $seeder = \Config\Database::seeder();
+                        $seeder->call('RoleSeeder');
                     } catch (\Throwable $e) {
                         return redirect()->to(base_url('install'))->with('msgError', 'Não foi criar as tabelas do banco de dados');
                     }
