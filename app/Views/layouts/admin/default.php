@@ -8,23 +8,23 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
-    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/fontawesome-free/css/all.min.css') ?>">
 
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-    <link rel="stylesheet" href="assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') ?>">
 
-    <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css') ?>">
 
-    <link rel="stylesheet" href="assets/plugins/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/jqvmap/jqvmap.min.css') ?>">
 
-    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css?v=3.2.0">
+    <link rel="stylesheet" href="<?= base_url('public/assets/dist/css/adminlte.min.css?v=3.2.0') ?>">
 
-    <link rel="stylesheet" href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') ?>">
 
-    <link rel="stylesheet" href="assets/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/daterangepicker/daterangepicker.css') ?>">
 
-    <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="<?= base_url('public/assets/plugins/summernote/summernote-bs4.min.css') ?>">
     <script nonce="969bbda7-72b8-48e7-9510-eb543a86afb1">
         (function(w, d) {
             ! function(a, e, t, r) {
@@ -99,39 +99,39 @@
 
     </div>
 
-    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="<?= base_url('public/assets/plugins/jquery/jquery.min.js') ?>"></script>
 
-    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="<?= base_url('plugins/jquery-ui/jquery-ui.min.js') ?>"></script>
 
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
 
-    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url('public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
-    <script src="asseets/plugins/chart.js/Chart.min.js"></script>
+    <script src="<?= base_url('public/asseets/plugins/chart.js/Chart.min.js') ?>"></script>
 
-    <script src="assets/plugins/sparklines/sparkline.js"></script>
+    <script src="<?= base_url('public/assets/plugins/sparklines/sparkline.js') ?>"></script>
 
-    <script src="assets/plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="<?= base_url('public/assets/plugins/jqvmap/jquery.vmap.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/plugins/jqvmap/maps/jquery.vmap.usa.js') ?>"></script>
 
-    <script src="assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="<?= base_url('public/assets/plugins/jquery-knob/jquery.knob.min.js') ?>"></script>
 
-    <script src="assets/plugins/moment/moment.min.js"></script>
-    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="<?= base_url('public/assets/plugins/moment/moment.min.js') ?>"></script>
+    <script src="<?= base_url('public/assets/plugins/daterangepicker/daterangepicker.js') ?>"></script>
 
-    <script src="assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="<?= base_url('public/assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') ?>"></script>
 
-    <script src="assets/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="<?= base_url('public/assets/plugins/summernote/summernote-bs4.min.js') ?>"></script>
 
-    <script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="<?= base_url('public/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') ?>"></script>
 
-    <script src="assets/dist/js/adminlte.js?v=3.2.0"></script>
+    <script src="<?= base_url('public/assets/dist/js/adminlte.js?v=3.2.0') ?>"></script>
 
-    <script src="assets/dist/js/demo.js"></script>
+    <script src="<?= base_url('public/assets/dist/js/demo.js') ?>"></script>
 
-    <script src="assets/dist/js/pages/dashboard.js"></script>
+    <script src="<?= base_url('public/assets/dist/js/pages/dashboard.js') ?>"></script>
 </body>
 
 </html>
