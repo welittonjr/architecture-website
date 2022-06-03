@@ -6,36 +6,21 @@ use CodeIgniter\Model;
 
 class User extends Model
 {
-    protected $DBGroup          = 'default';
+
     protected $table            = 'user';
-    protected $primaryKey       = 'id';
-    protected $useAutoIncrement = true;
-    protected $insertID         = 0;
-    protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
-    protected $allowedFields    = ['name','username','password','email','role_id','status'];
 
-    // Dates
-    protected $useTimestamps = false;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
+    protected $allowedFields    = ['name', 'username', 'password', 'email', 'role_id', 'status'];
 
-    // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
-    protected $skipValidation       = false;
-    protected $cleanValidationRules = true;
+    /**
+     * Retorna um usuário pelo seu e-mail
+     *
+     * @param string $email
+     * @return array
+     */
+    public function getByEmail(string $email): array
+    {
+        $rq = $this->where('email', $email)->first();
 
-    // Callbacks
-    protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
-    protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
-    protected $afterUpdate    = [];
-    protected $beforeFind     = [];
-    protected $afterFind      = [];
-    protected $beforeDelete   = [];
-    protected $afterDelete    = [];
+        return !is_null($rq) ? $rq : [];
+    }
 }
