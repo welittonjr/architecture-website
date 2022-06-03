@@ -3,7 +3,7 @@
 namespace App\Controllers\Register;
 
 use App\Controllers\BaseController;
-use App\Models\Users;
+use App\Models\User;
 
 class RegisterController extends BaseController
 {
@@ -13,16 +13,18 @@ class RegisterController extends BaseController
     {
         // Call helpers
         helper(array('form', 'session'));
-        $this->usersModel = new Users();
+        $this->usersModel = new User();
     }
 
     public function index()
     {
-        if (!db_connect()->tableExists('users')) {
+        if (!db_connect()->tableExists('user')) {
             return redirect()->to(base_url('install'));
         }
-        $result = $this->usersModel->get()->getResult();
-        if (count($result) > 0) {
+
+        $result = $this->usersModel->where('role_id', 1)->first();
+
+        if (isset($result)) {
             return redirect()->to(base_url('login'));
         }
 
@@ -39,8 +41,8 @@ class RegisterController extends BaseController
         if (implode($this->request->getServer(['REQUEST_METHOD'])) === 'POST') {
             $rules = [
                 'name' => 'required',
-                'email' => 'trim|required|valid_email|max_length[128]|is_unique[users.email]',
-                'username' => 'trim|required|is_unique[users.username]',
+                'email' => 'trim|required|valid_email|max_length[128]|is_unique[user.email]',
+                'username' => 'trim|required|is_unique[user.username]',
                 'password' => 'required|min_length[6]',
                 'cpassword' => 'required|matches[password]'
             ];
@@ -52,8 +54,9 @@ class RegisterController extends BaseController
             $this->usersModel->save([
                 'name' => $this->request->getVar('name'),
                 'username' => $this->request->getVar('username'),
-                'password' => sha1($this->request->getVar('password')),
-                'email' => $this->request->getVar('email')
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'email' => $this->request->getVar('email'),
+                'role_id' => 1
             ]);
 
             return redirect()->to(base_url('login'));

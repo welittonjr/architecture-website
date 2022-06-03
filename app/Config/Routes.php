@@ -40,7 +40,9 @@ $routes->post('/register/save', 'register/RegisterController::save');
 $routes->get('/', 'Home::index');
 $routes->get('/admin', 'admin/AdminController::index');
 $routes->get('/login', 'admin/AdminController::login');
-
+$routes->post('/login/auth', 'admin/AdminController::auth');
+$routes->get('/logout', 'admin/AdminController::logout');
+$routes->post('/recover-password', 'admin/AdminController::recoverPassword');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
