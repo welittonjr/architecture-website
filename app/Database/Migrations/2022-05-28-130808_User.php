@@ -26,7 +26,7 @@ class User extends Migration
             ),
             'password' => array(
                 'type' => 'varchar',
-                'constraint' => 20,
+                'constraint' => 100,
             ),
             'email' => array(
                 'type' => 'varchar',
