@@ -16,7 +16,7 @@ class InstallController extends BaseController
 
     public function index()
     {
-        if (db_connect()->tableExists('users')) {
+        if (db_connect()->tableExists('user')) {
             return redirect()->to(base_url('register'));
         }
 

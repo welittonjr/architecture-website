@@ -18,10 +18,12 @@ class RegisterController extends BaseController
 
     public function index()
     {
-        if (!db_connect()->tableExists('users')) {
+        if (!db_connect()->tableExists('user')) {
             return redirect()->to(base_url('install'));
         }
-        $result = $this->usersModel->get()->getResult();
+
+        $result = $this->usersModel->where('role_id', 1)->first();
+
         if (count($result) > 0) {
             return redirect()->to(base_url('login'));
         }
@@ -39,8 +41,8 @@ class RegisterController extends BaseController
         if (implode($this->request->getServer(['REQUEST_METHOD'])) === 'POST') {
             $rules = [
                 'name' => 'required',
-                'email' => 'trim|required|valid_email|max_length[128]|is_unique[users.email]',
-                'username' => 'trim|required|is_unique[users.username]',
+                'email' => 'trim|required|valid_email|max_length[128]|is_unique[user.email]',
+                'username' => 'trim|required|is_unique[user.username]',
                 'password' => 'required|min_length[6]',
                 'cpassword' => 'required|matches[password]'
             ];
@@ -53,7 +55,8 @@ class RegisterController extends BaseController
                 'name' => $this->request->getVar('name'),
                 'username' => $this->request->getVar('username'),
                 'password' => sha1($this->request->getVar('password')),
-                'email' => $this->request->getVar('email')
+                'email' => $this->request->getVar('email'),
+                'role_id' => 1
             ]);
 
             return redirect()->to(base_url('login'));
