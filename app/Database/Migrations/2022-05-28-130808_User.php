@@ -30,6 +30,7 @@ class User extends Migration
             ),
             'email' => array(
                 'type' => 'varchar',
+                'unique' => true,
                 'constraint' => 100,
             ),
             'role_id' => array(
