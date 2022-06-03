@@ -54,7 +54,7 @@ class RegisterController extends BaseController
             $this->usersModel->save([
                 'name' => $this->request->getVar('name'),
                 'username' => $this->request->getVar('username'),
-                'password' => sha1($this->request->getVar('password')),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
                 'email' => $this->request->getVar('email'),
                 'role_id' => 1
             ]);
