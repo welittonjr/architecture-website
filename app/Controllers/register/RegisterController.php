@@ -24,7 +24,7 @@ class RegisterController extends BaseController
 
         $result = $this->usersModel->where('role_id', 1)->first();
 
-        if (count($result) > 0) {
+        if (isset($result)) {
             return redirect()->to(base_url('login'));
         }
 
