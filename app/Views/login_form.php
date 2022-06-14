@@ -46,7 +46,7 @@
             </form>
 
             <p class="mt-2">
-                <a href="/">Esqueci a minha senha</a>
+                <a href="<?= base_url('login/forgot-password') ?>">Esqueci a minha senha</a>
             </p>
         </div>
 
