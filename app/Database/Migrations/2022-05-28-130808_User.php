@@ -38,6 +38,14 @@ class User extends Migration
                 'constraint' => 10,
                 'unsigned'   => true
             ),
+            'pass_reset_token' => array(
+                'type' => 'varchar',
+                'constraint' => 100,
+            ),
+            'pass_reset_status' => array(
+                'type' => 'tinyint',
+                'constraint' => 1,
+            ),
             'status' => array(
                 'type' => 'tinyint',
                 'constraint' => 1,
