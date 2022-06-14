@@ -24,7 +24,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
-        'auth'          => AuthFilter::class
+        // 'auth'          => AuthFilter::class
     ];
 
     /**
@@ -37,6 +37,11 @@ class Filters extends BaseConfig
         'before' => [
             'auth' => [
                 'except' => [
+                    '/',
+                    'install/*',
+                    'install/',
+                    'register/*',
+                    'register/',
                     'login/*',
                     'login/'
                 ]
