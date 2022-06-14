@@ -32,17 +32,22 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
+$routes->get('/', 'Home::index');
+$routes->get('/admin', 'AdminController::index');
+
 $routes->get('/install', 'install/InstallController::index');
 $routes->post('/install/it_started', 'install/InstallController::it_started');
 $routes->get('/register', 'register/RegisterController::index');
 $routes->post('/register/save', 'register/RegisterController::save');
 
-$routes->get('/', 'Home::index');
-$routes->get('/admin', 'admin/AdminController::index');
-$routes->get('/login', 'admin/AdminController::login');
-$routes->post('/login/auth', 'admin/AdminController::auth');
+$routes->get('/login', 'AdminController::login');
+$routes->post('/login/auth', 'AdminController::auth');
+$routes->match(['get', 'post'], '/login/forgot-password', 'AdminController::forgotPassword');
+
 $routes->get('/logout', 'admin/AdminController::logout');
-$routes->post('/recover-password', 'admin/AdminController::recoverPassword');
+
+$routes->match(['get', 'post'], '/login/reset-password/token_(:hash)', 'AdminController::resetPassword/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
