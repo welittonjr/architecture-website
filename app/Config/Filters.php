@@ -37,6 +37,11 @@ class Filters extends BaseConfig
         'before' => [
             'auth' => [
                 'except' => [
+                    '/',
+                    'install/*',
+                    'install/',
+                    'register/*',
+                    'register/',
                     'login/*',
                     'login/'
                 ]
