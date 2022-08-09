@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# exemple of use: ./scripts/cli.sh "php spark --help"
-
 COMMAND=$1
-CONTAINER_ID=$(docker ps --filter name=apache-srv -aq)
+CONTAINER_ID=$(docker ps --filter name=php-app -aq)
 
 docker exec -it $CONTAINER_ID sh -c "$COMMAND"
