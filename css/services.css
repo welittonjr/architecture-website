@@ -1,0 +1,112 @@
+#service {
+  margin-bottom: 10em;
+}
+
+.service-content {
+  height: 70vh !important;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  flex-wrap: wrap;
+
+  height: inherit;
+  width: 100%;
+}
+
+.service {
+  display: flex;
+  flex: 1 1 calc(300px - 2em);
+  margin: 1em;
+
+  position: relative;
+  z-index: 1;
+}
+
+.service img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.service > div {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  z-index: 2;
+
+  transform: translate(-50%, -90%);
+
+  background-color: var(--brown);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  height: 50%;
+  width: 85%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 20px;
+
+  padding: 20px;
+  border-radius: 10px;
+
+  transition: height 0.6s ease;
+}
+
+.service > div:hover {
+  height: 60%;
+}
+
+.service > div > svg {
+  font-size: 3.4em;
+  color: var(--white);
+}
+
+.service > div > h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.service > div > p {
+  font-size: 1em;
+  color: var(--white);
+  text-align: start;
+  display: none;
+}
+
+.service > div:hover > p {
+  display: block;
+}
+
+.service-btn-size {
+  width: 100%;
+  min-height: 50px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .service-content {
+    height: auto !important;
+    justify-content: center;
+  }
+
+  .service {
+    height: 60em;
+    flex: 1 1 calc(500px - 2em);
+  }
+
+  .service > div > p {
+    display: block;
+  }
+  
+  .service > div:hover > p {
+    display: none;
+  }
+  
+}

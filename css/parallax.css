@@ -1,0 +1,91 @@
+.parallax {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  margin-bottom: 10em;
+}
+
+.parallax-img1 {
+  background-image: url("../image/parallax1.jpg");
+}
+
+.parallax-img2 {
+  background-image: url("../image/parallax2.jpg");
+}
+
+.parallax-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.parallax__information {
+  height: 500px;
+  width: 500px;
+
+  background-color: var(--brown);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 40px;
+
+  padding: 50px;
+  z-index: 2;
+}
+
+.parallax__information > h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.parallax__information > p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.parallax__information > a {
+  background-color: var(--brown);
+  border: 1px solid var(--white);
+  color: var(--white);
+
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.parallax__information > a:hover {
+  border: 1px solid var(--white);
+  color: var(--brown);
+  background-color: var(--white);
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .parallax-wrapper{
+    justify-content: center !important;
+  }
+
+  .parallax__information {
+    width: 100%;
+  }
+}

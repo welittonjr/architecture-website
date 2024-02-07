@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Arquitetura Home Design</title>
+  </head>
+  <body>
+    <header id="home">
+      <div class="menu-bar">
+        <div class="container bar-size">
+          <div class="navegation__brand">
+            <a href="#home">
+              <img src="./image/logotipo.png" alt="arquitetura home design" />
+            </a>
+          </div>
+          <div id="hamburger" class="navegation__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav id="menu" class="navegation__menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#service">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </nav>
+        </div>
+      </div>
+      <div class="banner__video">
+        <video loop autoplay muted>
+          <source src="./image/interior_design.mp4" type="video/mp4" />
+        </video>
+        <div class="information">
+          <h1>Projetos Executivos para seu estilo de vida</h1>
+          <p>
+            Do classico ao conteporâneo, trazemos projeto sobre medida para
+            refletir sua personalidade
+          </p>
+          <a class="btn-default btn-information-size text-uppercase"
+            >Ver Projetos</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- SERVICES -->
+      <section id="service">
+        <div class="container">
+          <div class="flex flex-column">
+            <div class="section-title">
+              <h1 class="text-uppercase">Serviços</h1>
+              <p class="">
+                Nosso escritório de arquitetura oferece soluções inovadoras,
+                projetando espaços que harmonizam estética e funcionalidade,
+                transformando sonhos em ambientes únicos e inspiradores.
+              </p>
+            </div>
+            <div>
+              <div class="content service-content">
+                <div class="service-list">
+                  <div class="service bg-higher bg-black-higher">
+                    <img src="./image/01.jpg" alt="" />
+                    <div>
+                      <i class="fas fa-home"></i>
+                      <h2>Arquitetura Residencial</h2>
+                      <p>
+                        A arte de dar vida aos sonhos de lar. Esse serviço
+                        transcende a construção de casas, incorporando a
+                        personalidade e necessidades únicas de cada cliente nos
+                        projetos.
+                      </p>
+                      <a
+                        class="btn-default service-btn-size text-uppercase"
+                        href="#"
+                        >Saiba mais</a
+                      >
+                    </div>
+                  </div>
+                  <div class="service bg-higher bg-black-higher">
+                    <img src="./image/03.jpg" alt="" />
+                    <div>
+                      <i class="fas fa-couch"></i>
+                      <h2>Arquitetura de Interiores</h2>
+                      <p>
+                        Deixar espaços internos funcionais, esteticamente
+                        agradáveis e expressivos. Esse serviço abrange a
+                        reorganização de layouts, escolha de mobiliário e
+                        detalhes decorativos para criar ambientes que refletem a
+                        sua personalidade.
+                      </p>
+                      <a
+                        class="btn-default service-btn-size text-uppercase"
+                        href="#"
+                        >Saiba mais</a
+                      >
+                    </div>
+                  </div>
+                  <div class="service bg-higher bg-black-higher">
+                    <img src="./image/02.webp" alt="" />
+                    <div>
+                      <i class="fa-solid fa-trowel-bricks"></i>
+                      <h2>Reformas</h2>
+                      <p>
+                        A Reformar é renovar, transformar e revitalizar
+                        ambientes. esse processo visa aprimorar espaços de
+                        acordo com suas necessidades e estilo. Ao optar por uma
+                        reforma, você pode modernizar ou simplesmente dar uma
+                        cara nova aos locais que ama.
+                      </p>
+                      <a
+                        class="btn-default service-btn-size text-uppercase"
+                        href="#"
+                        >Saiba mais</a
+                      >
+                    </div>
+                  </div>
+                  <div class="service bg-higher bg-black-higher">
+                    <img src="./image/04.webp" alt="" />
+                    <div>
+                      <i class="fa-solid fa-globe"></i>
+                      <h2>Consultoria</h2>
+                      <p>
+                        A consultoria é essecial para quem busca um orientação
+                        na criação ou renovação de espaços. Oferecemos insights
+                        sobre otimização de ambientes, estética e
+                        funcionalidade.
+                      </p>
+                      <a
+                        class="btn-default service-btn-size text-uppercase"
+                        href="#"
+                        >Saiba mais</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PARALLAX1 -->
+      <section class="parallax parallax-img1 bg-higher bg-black-higher">
+        <div class="container">
+          <div class="parallax-wrapper justify-end">
+            <div class="parallax__information">
+              <h1 class="text-uppercase">Design além do comun</h1>
+              <p>
+                De residências luxuosas a espaços comerciais vibrantes, nós
+                transformamos sonhos em realidade.
+              </p>
+              <a href="">Converse Conosco</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <div class="flex flex-column">
+            <div class="section-title">
+              <h1 class="text-uppercase">Sobre</h1>
+            </div>
+            <div class="content about-content">
+              <div class="column-left-description bg-higher bg-brown-higher">
+                <h1 class="about-name text-uppercase">Mayana Favacho</h1>
+                <p class="about-description">
+                  Mayana Favacho, arquiteta especializada em Projetos
+                  Arquitetônicos e Consultoria de Interiores Residenciais,
+                  prioriza a saúde e bem-estar em seus projetos, refletindo a
+                  individualidade de cada cliente. Seu escritório, Mayana
+                  Favacho Arquitetura, utiliza sensibilidade, criatividade e
+                  técnicas psicológicas para criar projetos personalizados que
+                  buscam proporcionar felicidade, utilidade, paz e harmonia.
+                  Localizado em Castanhal/PA, o escritório atende globalmente,
+                  transformando sonhos em realidade com dedicação e carinho.
+                </p>
+              </div>
+              <div class="column-right-img">
+                <img
+                  class="image-resonsive"
+                  src="./image/arquiteta-mayana-favacho.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT WORK -->
+      <section>
+        <div class="container">
+          <div class="column">
+            <div class="section-title">
+              <h1 class="text-uppercase">O que dizem sobre meu trabalho</h1>
+            </div>
+            <div class="work-description">
+              <div class="work-images">
+                <div class="work-image">
+                  <img src="./image/01.jpg" />
+                </div>
+                <div class="work-image">
+                  <img src="./image/01.jpg" />
+                </div>
+              </div>
+              <div class="work-quote text-justify">
+                <p class="text-italic">
+                  “Realizei um sonho de ter um ambiente como eu desejava, e tudo
+                  se tornou ainda mais especial ao contar com o talento e
+                  profissionalismo da <span class="text-bold">Mayana</span> .
+                  Desde o primeiro contato, senti uma conexão única, como se
+                  estivéssemos compartilhando as mesmas ideias. As conversas para
+                  o projeto foram inspiradoras, e a execução da obra foi conduzida
+                  com uma maestria que superou todas as minhas expectativas.
+                  Agradeço sinceramente a
+                  <span class="text-bold">Mayana</span> por ter transformado meu
+                  sonho em realidade. <span class="text-bold">Italo Gomes</span>“
+                </p>
+              </div>
+            </div>
+            <div class="work-description">
+              <div class="work-quote text-justify">
+                <p class="text-italic">
+                  “Minha jornada para transformar meu lar em um verdadeiro refúgio
+                  de conforto e estilo foi incrivelmente enriquecida com a
+                  expertise da arquiteta <span class="text-bold">Mayana</span>.
+                  Desde o início, senti-me compreendida e respeitada em minhas
+                  ideias e aspirações. Mayana foi além de uma profissional
+                  excepcional, tornando-se uma verdadeira guia neste processo
+                  criativo. Seu talento e visão trouxeram uma nova vida ao meu
+                  espaço, superando todas as expectativas. Estou profundamente
+                  agradecida à <span class="text-bold">Mayana</span> por ter
+                  tornado meu lar um lugar verdadeiramente especial. Muito
+                  obrigada! <span class="text-bold">Brenda Oliveira</span>“
+                </p>
+              </div>
+              <div class="work-images">
+                <div class="work-image">
+                  <img src="./image/01.jpg" />
+                </div>
+                <div class="work-image">
+                  <img src="./image/01.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PARALLAX2 -->
+      <section class="parallax parallax-img2 bg-higher bg-black-higher">
+        <div class="container">
+          <div class="parallax-wrapper">
+            <div class="parallax__information">
+              <h1 class="text-uppercase">Design visionário</h1>
+              <p class="text-justify">
+                Exploramos fronteiras do design, transformando cada projeto em
+                uma narrativa única. Das residências luxuosas aos espaços
+                comerciais vibrantes, criamos realidades que transcendem
+                expectativas. Converse conosco e dê vida ao extraordinário em
+                arquitetura.
+              </p>
+              <a href="">Converse Conosco</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DEPOIMENTOS -->
+      <section>
+        <div class="column">
+          <div class="section-title">
+            <h1 class="text-uppercase">Depoimentos</h1>
+          </div>
+        <div>
+        <div
+          class="background-brown section-size flex align-center"
+          id="depositions"
+        >
+          <div class="container flex flex-column">
+            <div class="depositions-list flex justify-center flex-wrap">
+              <div class="deposition fade">
+                <div class="quote">
+                  Amamos cada detalhe do projeto, nossa casa virou um verdadeiro
+                  lar! Obrigado pelo cuidado
+                </div>
+                <div class="quote-author">
+                  <span> Luciana e Carlos</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Transformaram nosso sonho em realidade! Cada espaço reflete
+                  nossa personalidade. Parabéns pelo talento.
+                </div>
+                <div class="quote-author">
+                  <span>Fernanda e Rafael</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Profissionalismo impecável! Cada ambiente ficou perfeito,
+                  superando nossas expectativas.
+                </div>
+                <div class="quote-author">
+                  <span>Ana e Gabriel</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Encantados com o resultado! A harmonia e elegância do design
+                  são admiráveis. Gratos pelo trabalho.
+                </div>
+                <div class="quote-author">
+                  <span> Patricia e Eduardo</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Nosso escritório nunca esteve tão inspirador! Vocês captaram
+                  perfeitamente nossa visão.
+                </div>
+                <div class="quote-author">
+                  <span>Camila e Ricardo</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Transformação surpreendente! A casa ganhou vida e
+                  personalidade. Agradecemos pela dedicação.
+                </div>
+                <div class="quote-author">
+                  <span>Carolina e Felipe</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Superaram todas as nossas expectativas! Cada ambiente é uma
+                  obra-prima. Obrigada.
+                </div>
+                <div class="quote-author">
+                  <span>Mariana e André</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Transformação surpreendente! A casa ganhou vida e
+                  personalidade. Agradecemos pela dedicação.
+                </div>
+                <div class="quote-author">
+                  <span>Carolina e Felipe</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Incrível como entenderam nossos gostos! A casa agora é um
+                  reflexo perfeito de quem somos.
+                </div>
+                <div class="quote-author">
+                  <span>Isabella e Lucas</span>
+                </div>
+              </div>
+              <div class="deposition fade">
+                <div class="quote">
+                  Estamos simplesmente apaixonados pelo novo visual! Cada canto
+                  é uma descoberta.
+                </div>
+                <div class="quote-author">
+                  <span>Julia e Gustavo</span>
+                </div>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+              <span class="dot" onclick="currentSlide(8)"></span>
+              <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="socia-group-floating">
+      <div class="round-button bg-instagram">
+        <a
+          class="sm-link"
+          href="https://www.instagram.com/mayanafavachoarquiteta"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <div class="round-button bg-whatsapp">
+        <a
+          class="sm-link"
+          href="https://api.whatsapp.com/send/?phone=5591985517911&text=Ol%C3%A1+Mayana+gostaria+de+umas+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <footer id="contact" class="bg-higher bg-black-higher">
+      <div class="contact-floating">
+        <div class="contact-title section-title">
+          <h1 class="text-uppercase">Contato</h1>
+          <p>
+            Seu espaço, sua história. Compartilhe seus desejos e ideias
+            preenchendo o formulário abaixo. Nossa equipe especializada em
+            design está pronta para transformar suas aspirações em ambientes
+            extraordinários. Vamos começar!
+          </p>
+        </div>
+        <div class="form-content">
+          <div class="form-backgroud"></div>
+          <div class="form-contact">
+            <form action="#" method="post">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Telefone"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Mensagem"
+                required
+              ></textarea>
+
+              <button
+                class="btn-default contact-btn-size text-uppercase"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-content">
+            <div>
+              <picture>
+                <img src="./image/logotipo_bco.png" alt="" />
+              </picture>
+            </div>
+            <hr />
+            <div>
+              <div>
+                <span
+                  >Copyright © <span id="currentYear"></span> – Todos os
+                  direitos reservados</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var currentYearElement = document.getElementById("currentYear");
+          var currentYear = new Date().getFullYear();
+          currentYearElement.textContent = currentYear;
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  </body>
+</html>
