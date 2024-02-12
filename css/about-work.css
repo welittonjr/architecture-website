@@ -18,7 +18,7 @@
 }
 .work-quote p {
   font-size: 18px;
-  color: var(--brown-strong);
+  color: var(--brown);
 }
 .work-image {
   height: calc(300px - 20px);
