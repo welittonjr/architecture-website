@@ -1,10 +1,9 @@
-.socia-group-floating{
-    position: fixed;
-    right: 10px;
-    bottom: 40px;
-    z-index: 5;
+.socia-floating {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  z-index: 5;
 }
-
 
 .round-button {
   width: 80px;
@@ -17,7 +16,10 @@
   justify-content: center;
 
   border-radius: 50%;
-  
+}
+
+.round-button a {
+  margin: 0;
 }
 
 .sm-link > svg {
@@ -55,14 +57,23 @@
 }
 
 .bg-instagram:hover {
-    background: #ff3399
+  background: #dc2743;
 }
 
 .bg-whatsapp {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 
 .bg-whatsapp:hover {
-    background-color: var(--green-light);
+  background-color: var(--green-light);
 }
-  
+
+@media screen and (max-width: 576px) {
+  .socia-floating {
+    right: 10px;
+  }
+  .round-button {
+    height: 70px;
+    width: 70px;
+  }
+}
