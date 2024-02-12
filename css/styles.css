@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url(./animation.css);
 @import url(./navegation.css);
 @import url(./video.css);
 @import url(./informational.css);
@@ -160,6 +161,24 @@ p {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.image-fluid-contain,
+.image-fluid-cover,
+.video-fluid-contain,
+.video-fluid-cover {
+  height: 100%;
+  width: 100%;
+}
+
+.image-fluid-contain,
+.video-fluid-contain {
+  object-fit: contain;
+}
+
+.image-fluid-cover,
+.video-fluid-cover {
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1200px) {

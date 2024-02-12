@@ -2,33 +2,14 @@
   margin-bottom: 10em;
 }
 
-.service-content {
-  height: 70vh !important;
-}
-
-.service-list {
-  display: flex;
-  justify-content: space-around;
-  align-self: center;
-  flex-wrap: wrap;
-
-  height: inherit;
-  width: 100%;
-}
-
 .service {
-  display: flex;
-  flex: 1 1 calc(300px - 2em);
-  margin: 1em;
-
+  height: 500px;
   position: relative;
   z-index: 1;
+  padding: 5px;
 }
 
 .service img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   position: relative;
 }
 
@@ -47,18 +28,40 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
-  row-gap: 20px;
 
   padding: 20px;
   border-radius: 10px;
 
-  transition: height 0.6s ease;
+  transition: height 0.9s ease;
 }
 
 .service > div:hover {
-  height: 60%;
+  top: 50%;
+  left: 50%;
+  justify-content: flex-end;
+  transform: translate(-50%, -50%);
+  transition: fade 0.8s ease;
+  height: 90%;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.service > div > svg,
+.service > div > h2,
+.service > div > p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .service > div > svg {
@@ -67,14 +70,14 @@
 }
 
 .service > div > h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
   color: var(--white);
   text-transform: uppercase;
 }
 
 .service > div > p {
-  font-size: 1em;
+  font-size: 1rem;
   color: var(--white);
   text-align: start;
   display: none;
@@ -91,11 +94,6 @@
 }
 
 @media only screen and (max-width: 1600px) {
-  .service-content {
-    height: auto !important;
-    justify-content: center;
-  }
-
   .service {
     height: 60em;
     flex: 1 1 calc(500px - 2em);
@@ -104,9 +102,8 @@
   .service > div > p {
     display: block;
   }
-  
+
   .service > div:hover > p {
     display: none;
   }
-  
 }

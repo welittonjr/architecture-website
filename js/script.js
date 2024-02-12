@@ -30,7 +30,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "inline-block";
   slides[slideIndex].style.display = "inline-block";
   dots[slideIndex - 1].className += " active";
-  
+
   setTimeout(function () {
     console.log("Olá mundo");
     showSlides((slideIndex += 1));
@@ -59,24 +59,25 @@ function showSlides(n) {
 //   }
 // }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const openModalBtn = document.getElementById("openModalBtn");
+  const modalContainer = document.getElementById("modalContainer");
+  const closeModalBtn = document.getElementById("closeModalBtn");
 
-document.addEventListener('DOMContentLoaded', function () {
-  const openModalBtn = document.getElementById('openModalBtn');
-  const modalContainer = document.getElementById('modalContainer');
-  const closeModalBtn = document.getElementById('closeModalBtn');
-
-  openModalBtn.addEventListener('click', function () {
-    modalContainer.style.display = 'flex';
+  openModalBtn.addEventListener("click", function () {
+    modalContainer.style.display = "flex";
   });
 
-  closeModalBtn.addEventListener('click', function () {
-    modalContainer.style.display = 'none';
+  closeModalBtn.addEventListener("click", function () {
+    modalContainer.style.display = "none";
   });
 
   // Fechar modal clicando fora do conteúdo
-  modalContainer.addEventListener('click', function (event) {
+  modalContainer.addEventListener("click", function (event) {
     if (event.target === modalContainer) {
-      modalContainer.style.display = 'none';
+      modalContainer.style.display = "none";
     }
   });
 });
+
+
