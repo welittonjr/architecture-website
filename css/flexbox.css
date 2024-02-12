@@ -192,6 +192,27 @@
     max-width: 1140px;
   }
 
+  .w-2,
+  .w-3,
+  .w-4,
+  .w-5,
+  .w-6,
+  .w-7,
+  .w-8,
+  .w-9,
+  .w-10,
+  .w-11,
+  .w-12 {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
   .w-1,
   .w-2,
   .w-3,
@@ -207,12 +228,7 @@
     width: 100%;
     max-width: 100%;
   }
-}
-
-@media screen and (max-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
+  
 }
 
 @media screen and (max-width: 768px) {
