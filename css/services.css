@@ -1,38 +1,15 @@
-#service {
-  margin-bottom: 10em;
-}
-
-.service-content {
-  height: 70vh !important;
-}
-
-.service-list {
-  display: flex;
-  justify-content: space-around;
-  align-self: center;
-  flex-wrap: wrap;
-
-  height: inherit;
-  width: 100%;
-}
-
 .service {
-  display: flex;
-  flex: 1 1 calc(300px - 2em);
-  margin: 1em;
-
+  height: 500px;
   position: relative;
   z-index: 1;
+  padding: 5px;
 }
 
 .service img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   position: relative;
 }
 
-.service > div {
+.service-content {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -47,40 +24,51 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
-  row-gap: 20px;
 
   padding: 20px;
   border-radius: 10px;
 
-  transition: height 0.6s ease;
+  transition: height 0.9s ease;
 }
 
-.service > div:hover {
-  height: 60%;
+.service-content:hover {
+  top: 50%;
+  left: 50%;
+  justify-content: flex-end;
+  transform: translate(-50%, -50%);
+  transition: none 0.8s ease;
+  height: 90%;
 }
 
-.service > div > svg {
+.service-content > svg,
+.service-content > h2,
+.service-content > p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.service-content > svg {
   font-size: 3.4em;
   color: var(--white);
 }
 
-.service > div > h2 {
-  font-size: 1.5em;
+.service-content > h2 {
+  font-size: 1.2em;
   font-weight: 600;
   color: var(--white);
   text-transform: uppercase;
 }
 
-.service > div > p {
-  font-size: 1em;
+.service-content > p {
+  font-size: 1rem;
   color: var(--white);
   text-align: start;
   display: none;
 }
 
-.service > div:hover > p {
+.service-content:hover > p {
   display: block;
 }
 
@@ -90,23 +78,60 @@
   height: 50px;
 }
 
-@media only screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
+  .service {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 992px), (max-width: 768px) {
+  .service {
+    height: 700px;
+  }
   .service-content {
-    height: auto !important;
+    align-items: center;
     justify-content: center;
   }
 
-  .service {
-    height: 60em;
-    flex: 1 1 calc(500px - 2em);
+  .service-content > svg,
+  .service-content > h2,
+  .service-content > p {
+    margin-top: 0;
+    margin-bottom: 3rem;
   }
+  .service-content > svg {
+    font-size: 5em;
+  }
+  .service-content > h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .service-content > p {
+    font-size: 1.2em;
+    text-align: justify;
+  }
+}
 
-  .service > div > p {
-    display: block;
+@media screen and (max-width: 768px) {
+  .service-content > svg {
+    font-size: 3em;
   }
-  
-  .service > div:hover > p {
-    display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .service {
+    height: 500px;
   }
-  
+  .service-content > svg,
+  .service-content > h2,
+  .service-content > p {
+    margin-bottom: 1rem;
+  }
+  .service-content > h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .service-content > p {
+    font-size: 15px;
+  }
 }
