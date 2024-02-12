@@ -1,35 +1,41 @@
-.banner__video {
-    width: 100%;
-    height: 95vh;
-    position: relative;
+.bg-video {
+  width: 100%;
+  position: relative;
 }
 
-.banner__video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.wb-size-video {
+  height: 95vh;
 }
 
-.banner__video::after {
-    content: '';
-
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.60) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.60) 85%);
+.bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+.bg-video::after {
+  content: "";
 
-@media only screen and (max-width: 1200px){
-    .banner__video {
-        height: 70vh;
-        width: 100%;
-    }
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.6) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.6) 85%
+  );
+}
+
+@media only screen and (max-width: 1200px) {
+  .wb-size-video {
+    height: 70vh;
+  }
 }
 
 @media only screen and (max-width: 720px) {
-    .banner__video {
-        height: 65vh;
-    }
+  .wb-size-video {
+    height: 65vh;
+  }
 }
