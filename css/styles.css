@@ -36,7 +36,7 @@ body {
   background-image: url(../image/body.jpg);
   background-repeat: repeat; 
   background-attachment: fixed; 
-  background-size: cover;
+  background-size: 100% 100vh;
   font-family: "Albert Sans", Sans-serif;
 }
 
@@ -152,4 +152,11 @@ p {
 .image-fluid-cover,
 .video-fluid-cover {
   object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
 }
