@@ -103,6 +103,12 @@
   .deposition-limit-max .carousel {
     grid-auto-columns: 100%;
   }
+  .deposition-limit-max .btn-carousel:first-child {
+    left: -12px;
+  }
+  .deposition-limit-max .btn-carousel:last-child {
+    right: -12px;
+  }
   .deposition {
     width: auto;
   }
