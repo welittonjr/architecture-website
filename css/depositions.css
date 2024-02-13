@@ -104,10 +104,10 @@
     grid-auto-columns: 100%;
   }
   .deposition-limit-max .btn-carousel:first-child {
-    left: -12px;
+    left: -5px;
   }
   .deposition-limit-max .btn-carousel:last-child {
-    right: -12px;
+    right: -5px;
   }
   .deposition {
     width: auto;
