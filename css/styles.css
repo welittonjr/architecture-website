@@ -33,6 +33,10 @@
 }
 
 body {
+  background-image: url(../image/body.jpg);
+  background-repeat: repeat; 
+  background-attachment: fixed; 
+  background-size: cover;
   font-family: "Albert Sans", Sans-serif;
 }
 
