@@ -27,7 +27,7 @@ window.onscroll = () => {
 
   if (top >= spOffset && top < spOffset + spHeight && !animationAddedProject) {
     sectionProject.classList.add("animation-slide-right");
-    animationAddedService = true;
+    animationAddedProject = true;
   }
 
 };
