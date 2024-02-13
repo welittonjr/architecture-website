@@ -150,11 +150,6 @@ p {
   background-color: var(--white);
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
 .image-fluid-contain,
 .image-fluid-cover,
 .video-fluid-contain,
@@ -173,7 +168,7 @@ p {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .container {
     width: 95%;
   }
@@ -187,4 +182,4 @@ p {
   .section-title {
     font-size: 25px;
   }
-}
+} */
