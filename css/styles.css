@@ -12,6 +12,7 @@
 @import url(./contact.css);
 @import url(./about.css);
 @import url(./depositions.css);
+@import url(./show-project.css);
 @import url(./flexbox.css);
 @import url(./about-work.css);
 
@@ -52,6 +53,10 @@ section:not(.parallax) {
 
 p {
   line-height: 1.2;
+}
+
+main {
+  margin-bottom: 40em;
 }
 
 .content {
