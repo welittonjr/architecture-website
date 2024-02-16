@@ -61,33 +61,93 @@
           <div class="direction">
             <div class="section-title">
               <h1 class="text-uppercase color-white">Nome do Projeto</h1>
+              <p>Descrição minima do projeto</p>
             </div>
           </div>
           <div class="direction project-direction">
             <div class="w-4 project-image">
-              <img class="image-fluid-cover" src="./image/01.jpg" alt="" />
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(1)"
+              />
             </div>
             <div class="w-4 project-image">
-              <img class="image-fluid-cover" src="./image/01.jpg" alt="" />
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(2)"
+              />
             </div>
             <div class="w-4 project-image">
-              <img class="image-fluid-cover" src="./image/01.jpg" alt="" />
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(3)"
+              />
             </div>
             <div class="w-4 project-image">
-              <img class="image-fluid-cover" src="./image/01.jpg" alt="" />
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(4)"
+              />
             </div>
             <div class="w-4 project-image">
-              <img class="image-fluid-cover" src="./image/01.jpg" alt="" />
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(5)"
+              />
             </div>
             <div class="w-4 project-image">
-              <img class="image-fluid-cover" src="./image/01.jpg" alt="" />
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(6)"
+              />
             </div>
             <div class="w-4 project-image">
-              <img class="image-fluid-cover" src="./image/01.jpg" alt="" />
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(7)"
+              />
             </div>
           </div>
         </div>
-        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg"  />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/02.webp" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/03.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/04.webp" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/contact.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -176,6 +236,7 @@
       </div>
     </footer>
 
+    <script src="./js/js.js"></script>
     <script src="./js/animations.js"></script>
     <script src="./js/depositions.js" defer></script>
     <script>
@@ -186,6 +247,5 @@
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-
   </body>
 </html>

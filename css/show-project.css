@@ -1,4 +1,3 @@
-
 .project-list {
   margin-top: 100px;
 }
@@ -21,18 +20,97 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.project-image:hover::before {
+/* .project-image:hover::before {
   content: "";
   position: absolute;
   inset: 20px;
   width: calc(100% - 40px);
   height: calc(100% - 40px);
   background-color: rgba(0, 0, 0, 0.5);
+} */
+
+/* Estilo do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  margin: auto; /* Centraliza horizontalmente */
+  justify-content: center;
+  align-items: center;
 }
 
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  /* margin-top: -22px; */
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.prev {
+  left: 20%;
+}
+
+.next {
+  right: 20%;
+}
+
+.close {
+  position: absolute;
+  top: 55px;
+  right: 55px;
+  color: var(--white);
+  font-size: 60px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 576px) {
   .project-list {
     margin-top: 0px;
+  }
+  .modal {
+    background-color: rgba(0, 0, 0, 1.9);
+  }
+  .prev,
+  .next {
+    top: 80%;
+  }
+  .prev {
+    left: 20%;
+  }
+
+  .next {
+    right: 20%;
   }
 }
