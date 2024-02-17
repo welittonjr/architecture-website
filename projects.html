@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="arquitetura, design, construção, reforma, decoração, sustentabilidade, Castanhal, PA"
+    />
+    <meta
+      name="description"
+      content="Mayana Favacho arquiteta em Castanhal, PA, com experiência em projetos residenciais e comerciais"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,39 +46,206 @@
             <span></span>
           </div>
           <nav id="menu" class="navegation__menu">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#service">Serviços</a></li>
-            <li><a href="#project">Projetos</a></li>
-            <li><a href="#about">Sobre</a></li>
+            <li><a href="index.html#home">Início</a></li>
+            <li><a href="index.html#service">Serviços</a></li>
+            <li><a href="index.html#project">Projetos</a></li>
+            <li><a href="index.html#about">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      
+      <section class="project-list">
+        <div class="container">
+          <div class="direction">
+            <div class="section-title">
+              <h1 class="text-uppercase color-white">Nome do Projeto</h1>
+              <p>Descrição minima do projeto</p>
+            </div>
+          </div>
+          <div class="direction project-direction">
+            <div class="w-4 project-image">
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(1)"
+              />
+            </div>
+            <div class="w-4 project-image">
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(2)"
+              />
+            </div>
+            <div class="w-4 project-image">
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(3)"
+              />
+            </div>
+            <div class="w-4 project-image">
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(4)"
+              />
+            </div>
+            <div class="w-4 project-image">
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(5)"
+              />
+            </div>
+            <div class="w-4 project-image">
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(6)"
+              />
+            </div>
+            <div class="w-4 project-image">
+              <img
+                class="image-fluid-cover"
+                src="./image/01.jpg"
+                onclick="openModal(); currentSlide(7)"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg"  />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/02.webp" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/03.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/04.webp" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/contact.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg" />
+            </div>
+            <div class="mySlides">
+              <img class="image-fluid-cover" src="./image/01.jpg" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer id="contact" class="bg-higher bg-black-higher">
+
+    <div class="social-floating">
+      <div class="round-button bg-instagram">
+        <a
+          class="sm-link"
+          href="https://www.instagram.com/mayanafavachoarquiteta"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <div class="round-button bg-whatsapp">
+        <a
+          class="sm-link"
+          href="https://api.whatsapp.com/send/?phone=5591985517911&text=Ol%C3%A1+Mayana+gostaria+de+umas+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <footer id="contact">
+      <div class="contact-floating">
+        <div class="contact-title section-title">
+          <h1 class="text-uppercase">Contato</h1>
+          <p>
+            Seu espaço, sua história. Compartilhe seus desejos e ideias
+            preenchendo o formulário abaixo. Nossa equipe especializada em
+            design está pronta para transformar suas aspirações em ambientes
+            extraordinários. Vamos começar!
+          </p>
+        </div>
+        <div class="form-content">
+          <div class="form-backgroud"></div>
+          <div class="form-contact">
+            <form action="#" method="post">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Telefone"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Mensagem"
+                required
+              ></textarea>
+
+              <button
+                class="btn-default contact-btn-size text-uppercase"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-content">
-            <div>
-              <picture>
-                <img src="./image/logotipo_bco.png" alt="" />
-              </picture>
+            <div class="social-icons">
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-pinterest"></i>
             </div>
-            <hr />
-            <div>
-              <div>
-                <span
-                  >Copyright © <span id="currentYear"></span> – Todos os
-                  direitos reservados</span
-                >
-              </div>
-            </div>
+            <span
+              >Copyright © <span id="currentYear"></span> – Todos os direitos
+              reservados</span
+            >
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="./js/js.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/depositions.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentYearElement = document.getElementById("currentYear");
+        var currentYear = new Date().getFullYear();
+        currentYearElement.textContent = currentYear;
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
   </body>
 </html>
