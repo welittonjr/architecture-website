@@ -8,6 +8,22 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
+.project span {
+  display: none;
+}
+
+.project:hover span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  text-align: center;
+  font-size: 22px;
+  z-index: 1;
+}
+
 .project:hover a::after {
   content: "";
   position: absolute;
@@ -24,6 +40,14 @@
 .project-no-hover:hover::after {
   display: none;
   position: none;
+}
+
+
+.btn-project-size {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
